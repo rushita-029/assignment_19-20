@@ -1,0 +1,49 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bg-primary text-white p-18">
+        This is a div with a custom primary background color and custom padding.
+      </div>
+      
+      <div class="mt-22">
+        This div has a top margin of 5.5rem.
+      </div>
+      <style>
+
+module.exports = {
+  // Specify the paths to all of your template files
+  content: [
+    './src/**/*.{html,js}', // Adjust this path according to your project structure
+  ],
+  theme: {
+    extend: {
+      colors: {
+        // Add your custom color scheme here
+        primary: '#1D4ED8', // Example: Custom primary color
+        secondary: '#9333EA', // Example: Custom secondary color
+        accent: '#FBBF24', // Example: Custom accent color
+        // Add more colors as needed
+      },
+      spacing: {
+        // Add your custom spacing values here
+        '18': '4.5rem', // Example: Custom spacing value
+        '22': '5.5rem', // Example: Custom spacing value
+        '26': '6.5rem', // Example: Custom spacing value
+        // Add more spacing values as needed
+      },
+    },
+  },
+  plugins: [],
+
+</style>
+</body>
+</html>
+  

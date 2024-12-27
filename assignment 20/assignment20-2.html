@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Custom Components</title>
+  <style>
+    /* Card Component */
+.card {
+  background-color: white;
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow */
+  max-width: 20rem; /* Max width for the card */
+  margin: 2rem auto; /* Center the card horizontally */
+  padding: 1.5rem; /* Padding around the card content */
+}
+
+.card img {
+  border-radius: 0.5rem; /* Rounded corners for the image */
+  margin-bottom: 1rem; /* Space between image and text */
+}
+
+.card h3 {
+  font-size: 1.5rem; /* Title font size */
+  font-weight: 600; /* Semi-bold font weight */
+  color: #1a202c; /* Primary color */
+  margin-bottom: 1rem; /* Bottom margin to create space below the title */
+}
+
+.card p {
+  color: #edf2f7; /* Neutral light gray text color */
+  margin-bottom: 1.5rem; /* Bottom margin for spacing */
+}
+
+/* Custom Button inside the Card */
+.card .button {
+  background-color: #f6ad55; /* Accent color */
+  color: white;
+  padding: 0.75rem 1.5rem; /* Button padding */
+  border-radius: 0.5rem; /* Rounded corners */
+  transition: background-color 0.3s ease;
+}
+
+.card .button:hover {
+  background-color: #1a202c; /* Primary color on hover */
+}
+
+  </style>
+  <!-- Link to your Tailwind CSS file -->
+  <link href="dist/output.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-neutral text-gray-900">
+
+  <!-- Hero Section -->
+  <section class="bg-primary text-white p-72">
+    <h1 class="text-5xl font-bold mb-8">Welcome to Our Site</h1>
+    <p class="text-lg mb-8">Explore our amazing products and features. Our website is built with a custom Tailwind design.</p>
+    <!-- Custom Button -->
+    <button class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-primary transition duration-300">
+      Get Started
+    </button>
+  </section>
+
+  <!-- Card Section -->
+  <div class="flex justify-center gap-6 mt-16">
+    <!-- Card 1 -->
+    <div class="bg-white rounded-lg shadow-lg max-w-xs mx-auto p-6 my-8">
+      <img class="rounded-lg mb-4" src="https://via.placeholder.com/300" alt="Card Image">
+      <h3 class="text-2xl font-semibold text-primary mb-4">Card Title 1</h3>
+      <p class="text-neutral mb-6">This is a description of the first card. You can customize this text.</p>
+      <button class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-primary transition duration-300">
+        Read More
+      </button>
+    </div>
+    <!-- Card 2 -->
+    <div class="bg-white rounded-lg shadow-lg max-w-xs mx-auto p-6 my-8">
+      <img class="rounded-lg mb-4" src="https://via.placeholder.com/300" alt="Card Image">
+      <h3 class="text-2xl font-semibold text-primary mb-4">Card Title 2</h3>
+      <p class="text-neutral mb-6">This is a description of the second card. You can add any content here.</p>
+      <button class="bg-accent text-white px-6 py-3 rounded-lg hover:bg-primary transition duration-300">
+        Read More
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
